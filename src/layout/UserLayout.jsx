@@ -1,8 +1,15 @@
+import UserLeftbar from '@/components/User/UserLeftbar'
+import UserTopbar from '@/components/User/UserTopbar'
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const UserLayout = () => {
     return (
-        <div>UserLayout</div>
+        <>
+        <UserLeftbar/>
+        <UserTopbar/>
+        <Outlet/>
+        </>
     )
 }
 

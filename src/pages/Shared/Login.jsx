@@ -1,9 +1,28 @@
+import React,{useState} from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { useNavigate } from 'react-router-dom'
+
 
 const Login = () => {
+    const admindetails ={
+        email : 'admin',
+        password:'admin'
+    };
+
+    const [email, setEmail] = React.useState('');
+    const [password, setPassword] = React.useState('');
+    const navigate = useNavigate();
+
+    const handleLogin =()=>{
+        if(email === admindetails.email && password === admindetails.password){
+            navigate('/admin/dashboard');
+        }else{
+            navigate('/');
+        }
+    }
     return (
         <div className='h-full w-full flex justify-center items-center'>
             <Card className="w-1/4">
@@ -15,26 +34,24 @@ const Login = () => {
                 </CardHeader>
                 <CardContent className="grid gap-3">
                     <div className="relative">
-                        <div className="absolute inset-0 flex items-center">
+                        <div className="absolute inset-0 flex items-center bg-primary">
                             <span className="w-full border-t" />
                         </div>
                     </div>
                     <div className="grid gap-1.5" >
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="abc@gmail.com"/>
+                        <Label htmlFor="email">Email </Label>
+                        <Input id="email" type="email" placeholder="abc@gmail.com" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                     </div>
                     <div className="grid gap-1.5">
                         <Label htmlFor="password">Password</Label>
-                        <Input id="password" type="password" placeholder="......" />
+                        <Input id ="password" type="password" placeholder="......" value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     </div>
                 </CardContent>
                 <CardFooter>
-                    <Button className="w-full">Login</Button>
-
+                    <Button className="w-full" onClick={handleLogin} >Login</Button>
                 </CardFooter>
             </Card>
         </div>
     )
 }
-
 export default Login

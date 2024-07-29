@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-// import Home from './pages/Shared/Home'
 import Login from './pages/Shared/Login'
 import Register from './pages/Shared/Register'
 import UserLayout from './layout/UserLayout'
@@ -12,8 +11,7 @@ import AdminUsers from './pages/Admin/AdminUsers'
 import NotFound from './pages/Shared/NotFound'
 import HomeLayout from './layout/HomeLayout'
 import Home from './pages/Shared/Home'
-
-
+import Aboutus from './pages/Shared/Aboutus'
 
 const App = () => {
     return (
@@ -24,6 +22,7 @@ const App = () => {
                         <Route path='/' element={<Home />} />
                         <Route path='/login' element={<Login />} />
                         <Route path='/register' element={<Register />} />
+                        <Route path='/aboutus' element={<Aboutus />} />
                     </Route>
 
                     <Route element={<UserLayout />}>
