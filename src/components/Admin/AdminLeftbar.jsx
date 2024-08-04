@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Button } from '../ui/button'
-import { Icon } from 'lucide-react'
 import ShinyButton from '../magicui/shiny-button'
 
 const AdminLeftbar = () => {
@@ -33,7 +32,7 @@ const AdminLeftbar = () => {
 
         <ShinyButton text="Logout" className=" w-10 flex justify-center items-center "/>
         <div className='h-1/6 w-full flex flex-col justify-center items-center'>
-            {/* <Button>logout</Button> */}
+            <Button className='bg-black'> <a href='/'>logout</a></Button>
         
         </div>
     </div>

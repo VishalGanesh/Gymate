@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { LayoutDashboard, Cog, Mail, Users } from 'lucide-react'
+import { Button } from '../ui/button'
 const Leftbar = () => {
 
     const AdminLinks = [
@@ -28,8 +29,9 @@ const Leftbar = () => {
                     ))
                 }
             </div>
-            <div className='h-1/6 w-full flex flex-col justify-center items-center'>
-                logout
+            <div className='h-1/6 w-full flex flex-col justify-center items-center bg-black' >
+            {/* <button> </button> */}
+            <Button className='bg-white'><a href='/'>Logout</a></Button>
             </div>
 
         </div>

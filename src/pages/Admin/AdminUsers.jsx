@@ -15,7 +15,7 @@ const AdminUser = () => {
   return (
     <>
       <div className="w-4/5 flex flex-row border-primary absolute top-20 justify-center items-center ">
-        <div className="absolute left-0 font-bold text-xl ">User</div>
+        <div className="absolute left-0 font-bold text-xl ">Admin</div>
         <div className="absolute right-0 align items-center ">
           <Button>Add</Button>
         </div>
