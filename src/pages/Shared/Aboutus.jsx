@@ -4,7 +4,7 @@ const Aboutus = () => {
   return (
     <div className='m-16'>
       <p className='text-base'>
-       <b className='text-4xl'>About Us - Gymate</b><br/>
+       <b className='text-4xl text-center'>About Us - Gymate</b><br/>
     <br/>
 Welcome to Gymate, your ultimate destination for achieving fitness excellence! At Gymate, we believe in the power of transformation through dedication, hard work, and the right guidance. Our mission is to empower individuals to reach their fitness goals and lead healthier, happier lives.<br/>
 <br/>
@@ -39,10 +39,12 @@ At Gymate, we believe that a supportive community is essential for success. Our 
 Join us at Gymate and take the first step towards a healthier, stronger, and more confident you. Together, we'll make your fitness dreams a reality.<br/>
 
 <b className='text-xl'>Contact Us:</b><br/>
-[002341235]
+[9695949392]
 <br/>
-<b className='text-xl'>Location:</b><br/>
-[ 2nd floor Chupramani Complex near Veerabaghu Bakery, Dubai]
+<br>
+</br>
+<b className='text-xl items-center '>Location:</b><br/>
+Andipatti, Theni
 <br/>
 <b className='text-xl'></b><br/>
 

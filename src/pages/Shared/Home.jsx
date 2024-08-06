@@ -2,6 +2,7 @@ import BlurIn from "@/components/magicui/blur-in";
 import React from "react";
 import WordRotate from "@/components/magicui/word-rotate";
 import FlippingCard from "@/components/Shared/FlippingCards";
+
 const Home = () => {
   return (
     <>
@@ -36,6 +37,7 @@ const Home = () => {
           </div>
           <div className="flex flex-row">
             <FlippingCard />
+            
           </div>
         </div>
       </div>
